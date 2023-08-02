@@ -1,0 +1,24 @@
+/* Sticky footer */
+html,
+body {
+  min-height: 100%;
+}
+
+main {
+  /* Height minus footer and header */
+  min-height: calc(100vh - 80px - 64px);
+}
+
+#loginDialog {
+  height: 100vh;
+  width: 100vw;
+
+  /* Middle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginDialog article {
+  min-width: 400px;
+}
