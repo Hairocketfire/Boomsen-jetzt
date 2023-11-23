@@ -29,52 +29,52 @@
           <!-- Tabs -->
           <div class="tabs">
             <!-- https://github.com/beercss/beercss/blob/main/docs/TABS.md#method-2 -->
-            <a data-ui="#loginDialogLogin" class="active">Anmelden</a>
-            <a data-ui="#loginDialogRegister">Registrieren</a>
+            <a data-ui="#loginFormLogin" class="active">Anmelden</a>
+            <a data-ui="#loginFormRegister">Registrieren</a>
           </div>
 
           <!-- Login Page -->
-          <div class="page padding active" id="loginDialogLogin">
+          <form class="page padding active" id="loginFormLogin" onsubmit="submitLogin(event)">
             <h5>Anmelden</h5>
             <div class="field label prefix border">
               <i>person</i>
-              <input type="text">
+              <input type="text" name="username">
               <label>Nutzername</label>
             </div>
             <div class="field label prefix border">
               <i>key</i>
-              <input type="password">
+              <input type="password" name="password">
               <label>Passwort</label>
             </div>
             <button class="small-round">
               <i>login</i>
               <span>Anmelden</span>
             </button>
-          </div>
+          </form>
 
           <!-- Register Page -->
-          <div class="page padding" id="loginDialogRegister">
+          <form class="page padding" id="loginFormRegister" onsubmit="submitRegister(event)">
             <h5>Registrieren</h5>
             <div class="field label prefix border">
               <i>person</i>
-              <input type="text">
+              <input type="text" name="username">
               <label>Nutzername</label>
             </div>
             <div class="field label prefix border">
               <i>key</i>
-              <input type="text">
+              <input type="text" name="password">
               <label>Passwort</label>
             </div>
             <div class="field label prefix border">
               <i>key</i>
-              <input type="text">
+              <input type="text" name="password2">
               <label>Passwort wiederholen</label>
             </div>
             <button class="small-round">
               <i>login</i>
               <span>Registrieren</span>
             </button>
-          </div>
+          </form>
       </div>
       </article>
     </div>
@@ -120,7 +120,10 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.2.13/dist/cdn/beer.min.js"></script>
   <script type="module"
     src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.0.1/dist/cdn/material-dynamic-colors.min.js"></script>
+  
+  <script src="js/pocketbase.umd.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
