@@ -6,6 +6,7 @@ function submitLogin(e) {
   const {username, password } = e.target.elements
   console.log(username.value, password.value)
 
+  
   // If correct deactivate loginDialog
   document.getElementById('loginDialog').classList.remove('active')
 
@@ -22,3 +23,5 @@ function submitRegister(e) {
 
   return false
 }
+
+

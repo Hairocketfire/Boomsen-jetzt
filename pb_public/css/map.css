@@ -1,1 +1,5 @@
-#map { height: 980px ; width: divice ; }
+#map{
+    height: calc(100vh - 144px);
+    width: 100vw;
+    z-index: 0;
+}
