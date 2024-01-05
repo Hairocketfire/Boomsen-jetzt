@@ -1,0 +1,20 @@
+.scoreboard .row div:first-child {
+  width: 60px;
+  text-align: center;
+}
+
+.scoreboard .row div.large {
+  font-size: 2em;
+}
+
+.scoreboard .row.large {
+  margin-bottom: 1em;
+}
+
+.scoreboard .row.large h4 {
+  font-size: 2.5em;
+}
+
+.scoreboard .row h4 {
+  font-size: 1.5em;
+}
