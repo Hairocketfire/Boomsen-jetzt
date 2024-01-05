@@ -35,6 +35,11 @@ function navigateToPage(page) {
       const script = document.createElement('script')
       script.src = `pages/${page}.js`
       document.body.appendChild(script)
+      // Load coresponing css
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = `pages/${page}.css`
+      document.head.appendChild(link)
     })
 }
 
