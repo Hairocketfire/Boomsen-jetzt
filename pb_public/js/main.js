@@ -43,4 +43,27 @@ function navigateToPage(page) {
     })
 }
 
+function playAds() {
+  const adsButton = document.getElementById('ads-button')
+  const playing = adsButton.getAttribute('data-playing')
+
+  // Random number between 1 and 3
+  const random = Math.floor(Math.random() * 3) + 1
+
+  // Get song src from audio/Werbung_1.mp3
+  const audio = document.getElementById('ads-audio')
+
+  // Play audio if not playing
+  if (playing == 'false') {
+    adsButton.querySelector('i').innerText = 'volume_off'
+    audio.src = `audio/Werbung_${random}.mp3`
+    audio.play()
+    adsButton.setAttribute('data-playing', 'true')
+  } else {
+    adsButton.querySelector('i').innerText = 'volume_up'
+    audio.pause()
+    adsButton.setAttribute('data-playing', 'false')
+  }
+}
+
 navigateToPage('map')
