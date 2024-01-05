@@ -9,10 +9,11 @@
         <h2>Bummsbus</h2>
         <p>Vergnüge dich in einem Bus 5 mal</p>
         
-        <progress value="60" max="100" id="bummsbus" ></progress>
+        <progress value="0" max="100" step="20" id="bummsbus" ></progress>
       </div>
     </article>
   </div>
+
   <div class="s12 m6 l3">
     <article class="no-padding fill">
       <img
@@ -23,10 +24,12 @@
       <div class="padding">
         <h2>Long dong Silver</h2>
         <p>Vergnüge dich mit Long dong Silver</p>
-        <progress value="60" max="100"></progress>
+
+        <progress value="0" max="100" step="100" id="long_dong"></progress>
       </div>
     </article>
   </div>
+
   <div class="s12 m6 l3">
     <article class="no-padding fill">
       <img class="responsive small" src="pictures/achievments/Fucking.png" />
@@ -35,17 +38,11 @@
         <h2>Fucking</h2>
         <p>Vergnüge dich in Ficken</p>
 
-        <div class="progress-container">
-          <div class="progress">
-            <div class="progress-bar" id="progress"></div>
-          </div>
-          <button onclick="increaseProgress('bummsbus')">
-            Increase Progress
-          </button>
-        </div>
+        <progress value="0" max="100" step="100" id="fucking"></progress>
       </div>
     </article>
   </div>
+
   <div class="s12 m6 l3">
     <article class="no-padding fill">
       <img class="responsive small" src="pictures/achievments/Berthold.png" />
@@ -53,9 +50,12 @@
       <div class="padding">
         <h2>Berthold mit dem Winzingen</h2>
         <p>????</p>
+
+        <progress value="0" max="100" step="100" id="berthold"></progress>
       </div>
     </article>
   </div>
+
   <div class="s12 m6 l3">
     <article class="no-padding fill">
       <img class="responsive small" src="pictures/achievments/Feucht.webp" />
@@ -63,9 +63,12 @@
       <div class="padding">
         <h2>Feucht in Feucht</h2>
         <p>Vergnüge dich in Feucht</p>
+
+        <progress value="0" max="100" step="100" id="feucht"></progress>
       </div>
     </article>
   </div>
+
   <div class="s12 m6 l3">
     <article class="no-padding fill">
       <img
@@ -76,7 +79,75 @@
       <div class="padding">
         <h2>Keuchheitsgürtel</h2>
         <p>Vergnüge dich trotdz eines Keuchheitsgürtel</p>
+
+        <progress value="0" max="100" step="100" id="keuchheitsgürtel"></progress>
       </div>
     </article>
   </div>
+
+  <div class="s12 m6 l3">
+    <article class="no-padding fill">
+      <img class="responsive small" src="pictures/achievments/control.png" />
+
+      <div class="padding">
+        <h2>control</h2>
+        
+
+        <div class="progress-container">
+          <div class="progress">
+            <div class="progress-bar" id="progress"></div>
+          </div>
+          <button onclick="increaseProgress('bummsbus')">
+            Increase Bummsbus
+          </button>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress">
+            <div class="progress-bar" id="progress"></div>
+          </div>
+          <button onclick="increaseProgress('long_dong')">
+            Increase long_dong
+          </button>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress">
+            <div class="progress-bar" id="progress"></div>
+          </div>
+          <button onclick="increaseProgress('fucking')">
+            Increase fucking
+          </button>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress">
+            <div class="progress-bar" id="progress"></div>
+          </div>
+          <button onclick="increaseProgress('berthold')">
+            Increase berthold
+          </button>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress">
+            <div class="progress-bar" id="progress"></div>
+          </div>
+          <button onclick="increaseProgress('feucht')">
+            Increase feucht
+          </button>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress">
+            <div class="progress-bar" id="progress"></div>
+          </div>
+          <button onclick="increaseProgress('keuchheitsgürtel')">
+            Increase keuchheitsgürtel
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+
 </div>
