@@ -4,7 +4,7 @@ var boomsenContainer = document.querySelector('.boomsen')
 var nope = document.getElementById('nope')
 var love = document.getElementById('love')
 
-const users = [
+var users = [
   {
     name: 'Chronistin',
     tagline: 'Zeitlose Erzählerin, die Geschichten zum Leben erweckt.',
@@ -54,7 +54,7 @@ const users = [
 //   <p>This is a demo for boomsen like swipe cards</p>
 // </div>
 
-const cardContainer = document.querySelector('.boomsen--cards')
+var cardContainer = document.querySelector('.boomsen--cards')
 for (const user of users) {
   const initialCard = document.createElement('div')
   initialCard.classList.add('boomsen--card')
@@ -82,7 +82,6 @@ function initCards(card, index) {
 }
 
 allCards.forEach(function (el) {
-  console.log(allCards)
   var hammertime = new Hammer(el)
 
   hammertime.on('pan', function (event) {
