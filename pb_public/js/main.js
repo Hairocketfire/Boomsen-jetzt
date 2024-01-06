@@ -65,6 +65,12 @@ function playAds() {
     adsButton.querySelector('i').innerText = 'volume_off'
     audio.src = `audio/Werbung_${random}.mp3`
     audio.play()
+
+    audio.onended = function () {
+      adsButton.querySelector('i').innerText = 'volume_up'
+      adsButton.setAttribute('data-playing', 'false')
+    }
+
     adsButton.setAttribute('data-playing', 'true')
   } else {
     adsButton.querySelector('i').innerText = 'volume_up'
