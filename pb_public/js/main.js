@@ -27,6 +27,9 @@ function submitRegister(e) {
 function navigateToPage(page) {
   document.getElementById('content').innerHTML = ''
 
+  // If page is already active, do nothing
+  if (window.location.hash.substr(1) == page) return
+
   // Set hash
   window.location.hash = page
 
