@@ -26,6 +26,10 @@ function submitRegister(e) {
 // Navigation
 function navigateToPage(page) {
   document.getElementById('content').innerHTML = ''
+
+  // Set hash
+  window.location.hash = page
+
   // Fetch page
   fetch(`pages/${page}.html`)
     .then((response) => response.text())
@@ -66,4 +70,9 @@ function playAds() {
   }
 }
 
-navigateToPage('map')
+if (window.location.hash) {
+  const page = window.location.hash.substr(1)
+  navigateToPage(page)
+} else {
+  navigateToPage('map')
+}
