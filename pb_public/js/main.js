@@ -24,11 +24,11 @@ function submitRegister(e) {
 }
 
 // Navigation
-function navigateToPage(page) {
+function navigateToPage(page, force) {
   document.getElementById('content').innerHTML = ''
 
   // If page is already active, do nothing
-  if (window.location.hash.substr(1) == page) return
+  if (!force && window.location.hash.substr(1) == page) return
 
   // Set hash
   window.location.hash = page
@@ -81,7 +81,7 @@ function playAds() {
 
 if (window.location.hash) {
   const page = window.location.hash.substr(1)
-  navigateToPage(page)
+  navigateToPage(page, true)
 } else {
-  navigateToPage('map')
+  navigateToPage('map', true)
 }
